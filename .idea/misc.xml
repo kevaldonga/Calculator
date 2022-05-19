@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable-night/button_background_extra.xml" value="0.20384615384615384" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable-night/remove_logo.xml" value="0.20384615384615384" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1064102564102564" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/background_card.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/button_background.xml" value="0.2484375" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/button_background_extra.xml" value="0.20384615384615384" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/convertor_tab_focused.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/convertor_tab_not_focused.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_area_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_calculator_tab_focused.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_calculator_tab_not_focused.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_data_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_discount_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1064102564102564" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1064102564102564" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_length_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_mass_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_numeral_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_speed_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_teperature_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_time_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/ic_volume_convert.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/portrait_button_back.xml" value="0.19" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/drawable/remove_logo.xml" value="0.20384615384615384" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/layout/activity_operation.xml" value="0.264" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/layout/fragment_calculations.xml" value="0.2" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/layout/fragment_convertor.xml" value="0.4" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/layout/number_pad.xml" value="0.264" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.20384615384615384" />
+        <entry key="..\:/Users/Dell/.gradle/wrapper/Normal_calculator/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.20384615384615384" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

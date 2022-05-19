@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/PARENT"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".operation">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/number_pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="100dp"
+        android:layout_height="370dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/include"
+        app:layout_constraintTop_toTopOf="@+id/include"
+        app:layout_constraintVertical_bias="0.0">
+
+        <Button
+            android:id="@+id/button_ac"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/portrait_button_back"
+            android:text="@string/c"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button_remove"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/portrait_button_back"
+            android:drawableStart="@drawable/remove_logo"
+            android:paddingStart="23dp"
+            android:paddingTop="23dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp"
+            android:textColor="@color/orange"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TEXTVIEW"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="30dp"
+        android:maxLength="11"
+        android:text="@string/_0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/TEXTVIEW2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.624" />
+
+    <TextView
+        android:id="@+id/hint1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/Darker_grey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TEXTVIEW"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/TEXTVIEW"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:paddingTop="17dp"
+        android:textColor="@color/black"
+        android:text="@string/down_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/TEXTVIEW"
+        app:layout_constraintEnd_toStartOf="@+id/TEXTVIEW"
+        app:layout_constraintStart_toEndOf="@+id/spinner"
+        app:layout_constraintTop_toTopOf="@+id/TEXTVIEW"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="70dp"
+        android:layout_height="53dp"
+        android:background="@color/background"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/TEXTVIEW"
+        app:layout_constraintEnd_toStartOf="@+id/TEXTVIEW"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TEXTVIEW"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/TEXTVIEW2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="192dp"
+        android:maxLength="11"
+        android:text="@string/_0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/hint2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
+        android:textColor="@color/Darker_grey"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TEXTVIEW2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/TEXTVIEW2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:paddingTop="17dp"
+        android:text="@string/down_arrow"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/TEXTVIEW2"
+        app:layout_constraintEnd_toStartOf="@+id/TEXTVIEW2"
+        app:layout_constraintStart_toEndOf="@+id/spinner2"
+        app:layout_constraintTop_toTopOf="@+id/TEXTVIEW2" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="70dp"
+        android:layout_height="53dp"
+        android:background="@color/background"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toBottomOf="@+id/TEXTVIEW2"
+        app:layout_constraintEnd_toStartOf="@+id/TEXTVIEW"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/TEXTVIEW2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/TEXTVIEW3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="92dp"
+        android:maxLength="11"
+        android:text="@string/_0"
+        android:textAlignment="textEnd"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/include"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/TEXT1"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:paddingTop="17dp"
+        android:text="@string/original_price"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/TEXTVIEW"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintEnd_toStartOf="@+id/TEXTVIEW"
+        app:layout_constraintTop_toTopOf="@+id/TEXTVIEW" />
+
+    <TextView
+        android:id="@+id/TEXT2"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:paddingTop="17dp"
+        android:text="@string/discount_off"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/TEXTVIEW2"
+        app:layout_constraintEnd_toEndOf="@+id/TEXTVIEW2"
+        app:layout_constraintEnd_toStartOf="@+id/TEXTVIEW2"
+        app:layout_constraintTop_toTopOf="@+id/TEXTVIEW2" />
+
+    <TextView
+        android:id="@+id/TEXT3"
+        android:layout_width="wrap_content"
+        android:layout_height="53dp"
+        android:paddingTop="17dp"
+        android:text="@string/final_price"
+        android:visibility="invisible"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/TEXTVIEW3"
+        app:layout_constraintEnd_toEndOf="@+id/TEXTVIEW3"
+        app:layout_constraintEnd_toStartOf="@+id/TEXTVIEW3"
+        app:layout_constraintTop_toTopOf="@+id/TEXTVIEW3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
