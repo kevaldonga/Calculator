@@ -1,0 +1,94 @@
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Dosis', sans-serif;
+    height: inherit;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    background: linear-gradient(109.6deg, rgba(103, 30, 117, 1) 11.2%, rgba(252, 76, 2, 1) 91.1%);
+}
+
+.wrapper {
+    border-radius: 30px;
+    padding: 20px;
+    width: 340px;
+    font-size: inherit;
+    font-family: inherit;
+    background-color: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5.5px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.display {
+    font-size: 40px;
+    padding: 10px 20px 10px 10px;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    text-align: right;
+}
+
+.calc-button-row {
+    margin-top: 20px;
+    display: flex;
+    backdrop-filter: 5px;
+    justify-content: space-between;
+}
+
+.calc-button:last-child,
+#ac {
+    background-color: rgba(252, 76, 2, 1);
+    color: white;
+    backdrop-filter: blur(6px);
+    border: none;
+}
+
+.calc-button:last-child {
+    font-size: 30px;
+}
+
+.calc-button {
+    font-family: inherit;
+    padding: 18px 20px 18px 20px;
+    font-size: 25px;
+    flex-basis: 21%;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    background-color: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+}
+
+.calc-button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.calc-button:active {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.calc-button:last-child:hover,
+#ac:hover {
+    background-color: rgba(255, 156, 121, 0.8);
+}
+
+.calc-button:last-child:focus,
+#ac:active {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: orangered;
+}
+
+.double {
+    flex-basis: 47%;
+}

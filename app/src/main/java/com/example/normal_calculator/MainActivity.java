@@ -1,13 +1,22 @@
 package com.example.normal_calculator;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Environment;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.content.res.AppCompatResources;
+import androidx.documentfile.provider.DocumentFile;
 import androidx.viewpager.widget.ViewPager;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
     long pressed_time;
@@ -15,6 +24,18 @@ public class MainActivity extends AppCompatActivity {
     ViewPager viewPager;
     View view1, view2;
     boolean calc = true, convert = false;
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (resultCode == Activity.RESULT_OK) {
+            Uri treeUri = data.getData();
+            DocumentFile pickedDir = DocumentFile.fromTreeUri(this, treeUri);
+            String dirPath = pickedDir.getUri().getPath();
+            Log.i("storage",dirPath + pickedDir.canWrite());
+            // Use dirPath to write files to the selected directory
+        }
+    }
 
     @Override
     public void onBackPressed() {
@@ -31,6 +52,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        Intent intent = new Intent(Intent.ACTION_OPEN_DOCUMENT_TREE);
+        startActivityForResult(intent, 101);
         setContentView(R.layout.activity_main);
         viewPager = findViewById(R.id.viewpager_1);
         view1 = findViewById(R.id.view2);
